@@ -20,7 +20,7 @@ export default function Login() {
         </label>
         <button type="submit">Login</button>
       </form>
-      <a href="/">Criar uma conta</a>
+      <a href="/">Criar conta</a>
     </>
   );
 }
