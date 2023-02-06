@@ -1,4 +1,9 @@
+import { useState } from 'react';
+
 export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <>
       <form method="post">
@@ -8,6 +13,8 @@ export default function Login() {
             id="email-input"
             name="email"
             type="email"
+            value={ email }
+            onChange={ ({ target }) => setEmail(target.value) }
           />
         </label>
         <label htmlFor="password-input">
@@ -16,6 +23,8 @@ export default function Login() {
             id="password-input"
             name="password"
             type="password"
+            value={ password }
+            onChange={ ({ target }) => setPassword(target.value) }
           />
         </label>
         <button type="submit">Entrar</button>
