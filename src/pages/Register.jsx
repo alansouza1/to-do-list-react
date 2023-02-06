@@ -1,7 +1,15 @@
-export default function Login() {
+export default function Register() {
   return (
     <>
       <form method="post">
+        <label htmlFor="name-input">
+          Nome
+          <input
+            id="name-input"
+            name="name"
+            type="text"
+          />
+        </label>
         <label htmlFor="email-input">
           Email
           <input
@@ -18,9 +26,9 @@ export default function Login() {
             type="password"
           />
         </label>
-        <button type="submit">Entrar</button>
+        <button type="submit">Cadastre-se</button>
       </form>
-      <a href="/">Criar conta</a>
+      <a href="/">Entrar</a>
     </>
   );
 }
