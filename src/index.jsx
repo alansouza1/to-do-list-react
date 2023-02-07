@@ -4,16 +4,22 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './styles/index.css';
 
-import Login from './routes/Login';
 import ErrorPage from './error-page';
+
+import Login from './routes/Login';
+import SignUp from './routes/SignUp';
 
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Login />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: 'signup',
+    element: <SignUp />,
   },
 ]);
 
