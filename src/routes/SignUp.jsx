@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function SignUp() {
   return (
     <>
@@ -28,7 +30,7 @@ export default function SignUp() {
         </label>
         <button type="submit">Cadastre-se</button>
       </form>
-      <a href="/">Entrar</a>
+      <Link to="/">Entrar</Link>
     </>
   );
 }
