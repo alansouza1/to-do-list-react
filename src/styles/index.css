@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #0d1117;
+
   color: #c9d1d9;
+  background-color: #0d1117;
+
   box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -13,4 +17,14 @@ form {
   border: 1px solid white;
   border-radius: 6px;
   padding: 10px;
+}
+
+label {
+  background-color: inherit;
+}
+
+.form-input {
+  height: 30px;
+  margin-bottom: 16px;
+  border-radius: 6px;
 }

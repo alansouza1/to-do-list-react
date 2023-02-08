@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
+
+import '../styles/components/Header.css';
+
 export default function Login() {
   return (
-    <header>
-      <h1>To-do List</h1>
+    <header className="header">
+      <Link to="/">To Do List</Link>
     </header>
   );
 }

@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  background-color: #161b22;
+  height: 40px;
+}
+
+a {
+  align-self: center;
+  background-color: inherit;
+  color: white
+}
