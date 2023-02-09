@@ -6,6 +6,7 @@ import './styles/index.css';
 
 import ErrorPage from './error-page';
 
+import Root from './routes/Root';
 import Login from './routes/Login';
 import SignUp from './routes/SignUp';
 
@@ -14,12 +15,18 @@ import reportWebVitals from './reportWebVitals';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Login />,
+    element: <Root />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: 'signup',
-    element: <SignUp />,
+    children: [
+      {
+        path: "/",
+        element: <Login />,
+      },
+      {
+        path: 'signup',
+        element: <SignUp />,
+      },
+    ],
   },
 ]);
 
