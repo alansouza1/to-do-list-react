@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../components/Header';
-
 import '../styles/pages/Login.css';
 
 export default function Login() {
@@ -11,9 +9,8 @@ export default function Login() {
 
   return (
     <>
-      <Header />
       <div className="login-form">
-        <form method="post">
+        <form>
           <label htmlFor="email-input">Email</label>
           <input
             id="email-input"
@@ -33,7 +30,7 @@ export default function Login() {
             value={password}
             onChange={({ target }) => setPassword(target.value)}
           />
-          <button type="submit">Entrar</button>
+          <button type="button" className="login-button">Entrar</button>
         </form>
         <Link to="signup">Criar conta</Link>
       </div>

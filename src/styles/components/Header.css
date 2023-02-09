@@ -4,8 +4,11 @@ header {
   height: 40px;
 }
 
-a {
+header a {
   align-self: center;
   background-color: inherit;
-  color: white
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
 }
