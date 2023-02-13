@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../styles/pages/SignUp.css';
 
 export default function SignUp() {
   return (
@@ -28,9 +29,9 @@ export default function SignUp() {
           type="password"
         />
 
-        <button type="submit">Cadastre-se</button>
+        <button type="submit" className="signup-button">Cadastre-se</button>
       </form>
-      <Link to="/">Entrar</Link>
+      <p className="login-page">Já possui uma conta? <Link to="/">Entrar</Link></p>
     </>
   );
 }

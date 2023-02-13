@@ -32,7 +32,7 @@ export default function Login() {
           />
           <button type="button" className="login-button">Entrar</button>
         </form>
-        <Link className="register-button" to="signup">Criar conta</Link>
+        <Link className="signup-button" to="signup">Criar conta</Link>
       </div>
     </>
   );
